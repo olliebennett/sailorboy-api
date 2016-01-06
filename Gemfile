@@ -14,6 +14,9 @@ gem 'uglifier', '>= 1.3.0'
 # JSON APIs builder
 gem 'jbuilder', '~> 2.0'
 
+# RSpec Test Runner
+gem 'rspec-rails'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
