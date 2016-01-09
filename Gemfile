@@ -29,6 +29,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 
 group :test do
+  # Codecov.io Reporter
+  gem 'codecov', require: false
+
   # Extra matchers for testing
   gem 'shoulda-matchers'
 end
