@@ -8,6 +8,8 @@ services:
 addons:
   postgresql: "9.3"
 
+cache: bundler
+
 # Setup Test Database
 before_script:
   - psql -c 'create database sailorboy_test;' -U postgres
