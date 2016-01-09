@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+.buoy {
+  width: 102px;
+  height: 102px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -51px;
+  margin-top: -51px;
+}
