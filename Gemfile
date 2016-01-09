@@ -16,6 +16,9 @@ gem 'uglifier', '>= 1.3.0'
 # JSON APIs builder
 gem 'jbuilder', '~> 2.0'
 
+# Rack middleware to allow cross domain requests
+gem 'rack-cors', require: 'rack/cors'
+
 # RSpec Test Runner
 gem 'rspec-rails'
 
