@@ -25,6 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Puma as the app server
 gem 'puma'
 
+group :test do
+  # Extra matchers for testing
+  gem 'shoulda-matchers'
+end
+
 group :development, :test do
   gem 'byebug'
 end
