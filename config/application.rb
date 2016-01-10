@@ -21,10 +21,10 @@ module SailorboyApi
     # config.i18n.default_locale = :de
 
     # Enable Cross-Origin Resource Sharing (CORS) from all sources
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, 'Rack::Cors' do
       allow do
-        origins "*"
-        resource "*",
+        origins '*'
+        resource '*',
                  headers: :any,
                  methods: [:get, :post, :delete, :put, :patch, :options]
       end
