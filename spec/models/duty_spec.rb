@@ -1,5 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe Duty, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe Duty do
+  it { should validate_presence_of(:date) }
+  it { should validate_presence_of(:time) }
+  it { should validate_presence_of(:name) }
 end
