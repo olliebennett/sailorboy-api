@@ -45,6 +45,10 @@ end
 
 group :development do
   gem 'guard-rspec', require: false
+
+  # Spring Rails App Pre-loader
   gem 'spring'
+  gem 'spring-commands-rspec'
+
   gem 'web-console', '~> 2.0'
 end
