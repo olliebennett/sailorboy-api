@@ -32,6 +32,9 @@ group :test do
   # Codecov.io Reporter
   gem 'codecov', require: false
 
+  # RSpec output formatter
+  gem 'fuubar'
+
   # Extra matchers for testing
   gem 'shoulda-matchers'
 end
