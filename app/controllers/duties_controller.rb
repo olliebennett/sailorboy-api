@@ -2,27 +2,15 @@ class DutiesController < ApplicationController
   before_action :set_duty, only: [:show, :edit, :update, :destroy]
 
   # GET /duties
-  # GET /duties.json
   def index
     @duties = Duty.all
   end
 
   # GET /duties/1
-  # GET /duties/1.json
   def show
   end
 
-  # GET /duties/new
-  def new
-    @duty = Duty.new
-  end
-
-  # GET /duties/1/edit
-  def edit
-  end
-
   # POST /duties
-  # POST /duties.json
   def create
     @duty = Duty.new(duty_params)
 
@@ -38,7 +26,6 @@ class DutiesController < ApplicationController
   end
 
   # PATCH/PUT /duties/1
-  # PATCH/PUT /duties/1.json
   def update
     respond_to do |format|
       if @duty.update(duty_params)
@@ -52,7 +39,6 @@ class DutiesController < ApplicationController
   end
 
   # DELETE /duties/1
-  # DELETE /duties/1.json
   def destroy
     @duty.destroy
     respond_to do |format|
@@ -63,12 +49,10 @@ class DutiesController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_duty
     @duty = Duty.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def duty_params
     params.require(:duty).permit(:date, :time, :name)
   end
